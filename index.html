@@ -85,13 +85,14 @@ body{overflow-x:clip}
 .p-rail path{stroke:var(--ink);stroke-width:3;fill:none;stroke-linecap:round}.p-rail circle{fill:var(--ink)}
 .p-ltxt{fill:var(--accent);font-family:var(--f-mono);font-size:9px;font-weight:500}
 /* schedule */
-.lower{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(0,1fr);gap:18px}
+.lower{display:grid;grid-template-columns:minmax(0,1fr);gap:18px}
 @media (max-width:900px){.lower{grid-template-columns:minmax(0,1fr)}}
 .tbl-wrap{overflow-x:auto}
-table{border-collapse:collapse;width:100%;font-size:13.5px}
+table{border-collapse:collapse;width:100%;font-size:13.5px;table-layout:fixed;min-width:640px}
+col.c1{width:20%}col.c2{width:30%}
 th,td{text-align:left;padding:9px 14px;border-bottom:1px solid var(--line);vertical-align:top}
 th{font-family:var(--f-mono);font-size:11px;font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
-td.m{font-family:var(--f-mono);font-size:12.5px;white-space:nowrap;font-variant-numeric:tabular-nums}
+td.m{font-family:var(--f-mono);font-size:12.5px;font-variant-numeric:tabular-nums;overflow-wrap:anywhere}
 tr:last-child td{border-bottom:0}
 .notes{padding:6px 16px 14px;margin:0;display:grid;gap:10px;list-style:none}
 .notes li{font-size:13.5px;padding-left:14px;position:relative;max-width:62ch}
@@ -157,17 +158,17 @@ tr:last-child td{border-bottom:0}
     <section class="panel">
       <div class="panel-head"><h2>Muebles</h2><span class="hint">medidas sugeridas</span></div>
       <div class="tbl-wrap"><table>
-        <thead><tr><th>Mueble</th><th>Medida</th><th>Ubicación</th></tr></thead>
+        <colgroup><col class="c1"><col class="c2"><col></colgroup><thead><tr><th>Mueble</th><th>Medida</th><th>Ubicación</th></tr></thead>
         <tbody>
           <tr><td>Sofá cama</td><td class="m">2.00 × 0.90<br>abierto 2.00 × 1.45</td><td>Pared izquierda (3.36), centrado frente a la TV</td></tr>
           <tr><td>TV</td><td class="m">1.45 × 0.83</td><td>Pared derecha (3.28), centro a 1.20 m de altura (borde inferior a 0.785 m, 3.5 cm sobre el escritorio), sobre panel de listones de madera</td></tr>
-          <tr><td>Mueble TV + escritorio</td><td class="m">mueble TV 2.05 × 0.60 · h 0.58 (de pared a pared) · melamina 18 mm<br>escritorio 1.20 × 0.70 útil + ranura de 3.5 cm atrás · h 0.75 · tablero 18 mm doble</td><td>Mueble en 2 franjas: arriba todo abierto, abajo cerrado. El fondo de todo el mueble y del escritorio es melamina gris carbón (se ve en lo abierto y al sacar la mesa); tira LED en la franja abierta. Módulo izquierdo de 85 cm: abierto arriba (Switch + mandos) y cajón abajo; columna central de 25 cm con la Xbox parada (fondo gris carbón y LED); módulo derecho de 85 cm: libros arriba y mesa de centro abajo. Zócalo del mismo color en todo el mueble. Escritorio en la esquina con la pared de la puerta</td></tr>
+          <tr><td>Mueble TV + escritorio</td><td class="m">mueble TV 2.05 × 0.60 · h 0.58 (de pared a pared) · melamina 18 mm<br>escritorio 1.20 × 0.70 útil + ranura de 3.5 cm atrás · h 0.75 · tablero 18 mm doble</td><td>Mueble en 2 franjas: arriba todo abierto, abajo cerrado. El fondo de todo el mueble y del escritorio es melamina gris carbón (se ve en lo abierto y al sacar la mesa); tira LED en la franja abierta. Módulo izquierdo de 86.4 cm: abierto arriba (Switch + mandos) y cajón abajo; columna central de 25 cm con la Xbox parada (fondo gris carbón y LED); módulo derecho de 86.4 cm: libros arriba y mesa de centro abajo. Zócalo del mismo color en todo el mueble. Escritorio en la esquina con la pared de la puerta</td></tr>
           <tr><td>Nintendo Switch 2 + dock</td><td class="m">dock 0.20 × 0.05 · h 0.115</td><td>En el espacio abierto de la izquierda, pegada a la Xbox; al lado, los mandos de Xbox y Switch y una base de carga, bajo la impresora. 3 tomas dobles en el fondo gris (6 enchufes: impresora, Switch y cargadores de mandos) y pasacables para el HDMI</td></tr>
-          <tr><td>Tomas de corriente</td><td class="m">~8–9 puntos</td><td>Doble detrás de la TV (h 1.10); 3 dobles en el espacio abierto de la izquierda (impresora, Switch y cargadores de mandos); 2 dobles detrás de los libros (HomePod y reserva); una en el fondo de los nichos de Xbox y Switch; una abajo detrás de cada módulo de cajones (impresora y HomePod, cajones de 50 cm de fondo), alimentadas por una toma de pared detrás del mueble, cada una con su pasacables; una toma dentro de la columna de repisas del escritorio, en el espacio de la laptop (a ~45 cm, centrada entre la repisa y la división), donde se enchufa el supresor de picos de la bandeja</td></tr>
+          <tr><td>Tomas de corriente</td><td class="m">~9 puntos</td><td>Doble detrás de la TV (h 1.10); 3 dobles en el espacio abierto de la izquierda (impresora, Switch y cargadores de mandos); 1 doble en la columna de la Xbox (Xbox + soundbar); 2 dobles detrás de los libros (HomePod y reserva); 1 en la columna del escritorio, en el espacio de la laptop (~45 cm), para el supresor de picos. Se alimentan desde los tomacorrientes existentes en esa pared</td></tr>
           <tr><td>LED consolas</td><td class="m">tira COB en perfil empotrado</td><td>Bajo el borde frontal del techo de los nichos de la Switch y la Xbox, apuntando hacia adentro; no se ve de frente. Se prende con el mismo interruptor que la tira del mueble y el escritorio</td></tr>
           
           <tr><td>Cajón</td><td class="m">0.864 × 0.207 (hueco)</td><td>Abajo a la izquierda, para útiles de oficina, resmas y papeles</td></tr>
-          <tr><td>Mesa de centro (patas abatibles)</td><td class="m">0.76 × 0.50 · h 0.44 abierta<br>~0.09 plegada</td><td>De melamina, con 4 patas de 37.5 cm en bisagras para pata plegable y un marco de 6 cm donde se guardan las patas. Plegada se guarda en el módulo derecho, bajo los libros (hueco 0.85 × 0.575 · h 0.20, sobre zócalo y base como el resto), detrás de una puerta abatible embutida que se abre hacia abajo y queda horizontal gracias a 2 compases/topes; la mesa se desliza sobre ella. Al sacarla, se despliegan las patas y queda a la altura del asiento del sofá. Fieltros en las patas para no rayar el piso. Con el sofá cama abierto, va al costado de la cama, a la altura de la cabecera, como mesa de noche</td></tr>
+          <tr><td>Mesa de centro (patas abatibles)</td><td class="m">0.76 × 0.50 · h 0.44 abierta<br>~0.09 plegada</td><td>De melamina, con 4 patas de 37.5 cm en bisagras para pata plegable y un marco de 6 cm donde se guardan las patas. Plegada se guarda en el módulo derecho, bajo los libros (hueco 0.864 × 0.582 · h 0.207, sobre zócalo y base como el resto), detrás de una puerta abatible embutida que se abre hacia abajo y queda horizontal gracias a 2 compases/topes; la mesa se desliza sobre ella. Al sacarla, se despliegan las patas y queda a la altura del asiento del sofá. Fieltros en las patas para no rayar el piso. Con el sofá cama abierto, va al costado de la cama, a la altura de la cabecera, como mesa de noche</td></tr>
           <tr><td>Soundbar</td><td class="m">~0.90 × 0.10 · h 0.065</td><td>Encima del mueble, centrada bajo la TV (quedan ~14 cm hasta la pantalla). Pasacables en la tapa detrás de ella, que cae a la columna de la Xbox: corriente a la toma doble y HDMI eARC hacia la TV por el pasacables del fondo y el tubo del armazón</td></tr>
           
           <tr><td>Riel de luz (escritorio)</td><td class="m">riel negro de superficie<br>~1.35 + 1.0 m · 2 spots</td><td>Sale de la caja tapada del techo hacia la pared de la TV y gira en L sobre el escritorio, a ~62 cm de los listones, solo a lo largo del escritorio. 2 spots LED COB (7–10 W, 3000 K, 24–36°) apuntando al teclado, delante de ti. Sin picar el techo</td></tr>
@@ -186,11 +187,13 @@ tr:last-child td{border-bottom:0}
     <section class="panel">
       <div class="panel-head"><h2>Notas</h2></div>
       <ul class="notes" id="notes">
-        <li>Distancia sofá → TV de <b>~3.2 m</b>: buena para una pantalla de 1.45 m (65").</li>
-        <li>La silla queda en la esquina, fuera de la línea de vista sofá → TV. Con el sofá cama abierto quedan <b>~1.1 m</b> hasta ella.</li>
-        <li>Entre el sofá y la pared de la puerta quedan <b>~1.0 m</b> libres: la puerta abre completa contra la pared izquierda.</li>
-        <li>La ventana queda a tu izquierda: luz lateral, sin reflejos fuertes en el monitor ni contraluz.</li><li>Con el escritorio de <b>1.10 m</b> la TV vuelve a quedar centrada frente al sofá, y entre la TV y el escritorio quedan ~7 cm.</li><li>El mueble de TV tiene <b>60 cm</b> de fondo y el escritorio <b>70 cm</b>: el escritorio sobresale 10 cm, lo que marca bien la zona de trabajo. </li><li>La impresora va <b>encima del mueble</b>, en la esquina de la ventana, a 58 cm de altura: cargas papel y escaneas sin agacharte ni sacarla. El hueco donde iba (55 cm, junto al escritorio) ahora tiene 3 cajones para útiles.</li><li>La TV también puede ser una tercera pantalla de la MacBook; el cable HDMI pasa por detrás del panel de listones.</li><li>La pared de la puerta queda libre (<b>3.05 m</b>): sirve para un perchero, un librero bajo o una planta grande.</li>
-        <li>Techo: <b>4 dicroicos en línea sobre el sofá (S1–S4)</b>, a ~42 cm de la pared, y <b>4 en cuadrado (C1–C4)</b> hacia el centro, más una caja tapada (posición aproximada según la foto). Recomendado: GU10 LED de 2700–3000 K y 60°, cada grupo en su interruptor, idealmente con dimmer. Ninguno cae sobre el escritorio: ahí suma una barra de luz para monitor.</li>
+        <li>Distancia sofá → TV de <b>~3.2 m</b>: buena para una pantalla de 1.45 m (65"). Centro de la TV a <b>1.20 m</b> del piso.</li>
+        <li>Mueble de TV de pared a pared (<b>2.05 m</b>) y escritorio de <b>1.20 m</b>, todo en melamina de <b>18 mm</b>; fondos de lo abierto en gris carbón. Medidas detalladas en el alzado y los cortes.</li>
+        <li>La silla queda fuera de la línea de vista sofá → TV, y la ventana queda a tu izquierda al trabajar: luz lateral, sin reflejos en el monitor.</li>
+        <li>Entre el sofá y la pared de la puerta quedan <b>~1.0 m</b> libres; la puerta abre completa contra la pared izquierda.</li>
+        <li>La mesa plegable se guarda bajo los libros; con el sofá cama abierto, va al costado como mesa de noche.</li>
+        <li>Techo: <b>4 dicroicos en línea sobre el sofá</b> y <b>4 en cuadrado</b> hacia el centro (posición aproximada según la foto). GU10 LED de 2700–3000 K y 60°. El <b>riel</b> sale de la caja de paso y lleva 2 spots al escritorio sin picar el techo.</li>
+        <li>El interruptor conmutado de la pared de la TV queda sobre el panel (con suplemento de caja); conviene moverlo hacia la esquina para que el monitor no lo tape. La caja fuerte empotrada queda cubierta por el panel.</li>
         <li>El cuarto no es un rectángulo perfecto: con las 4 medidas, la pared izquierda queda ~1° inclinada. El plano respeta esa diferencia.</li>
       </ul>
     </section>
