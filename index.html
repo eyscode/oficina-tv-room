@@ -82,7 +82,7 @@ body{overflow-x:clip}
 .p-f2.out{stroke-dasharray:2 4;opacity:.7}
 .p-light circle,.p-light line{fill:none;stroke:var(--accent);stroke-width:1.1}
 .p-light.wire circle{stroke-dasharray:2 2}
-.p-light.blind circle{stroke:var(--muted);stroke-dasharray:2 2}.p-light.blind .p-ltxt{fill:var(--muted)}.p-light.feed circle{fill:var(--accent)}
+.p-light.blind circle{stroke:var(--muted);stroke-dasharray:2 2}.p-light.blind .p-ltxt{fill:var(--muted)}.p-light.feed circle{fill:var(--accent)}.p-rail circle.p-plafon{fill:var(--accent-soft);fill-opacity:.6;stroke:var(--ink);stroke-width:2}
 .p-rail path{stroke:var(--ink);stroke-width:3;fill:none;stroke-linecap:round}.p-rail circle{fill:var(--ink)}
 .p-ltxt{fill:var(--accent);font-family:var(--f-mono);font-size:9px;font-weight:500}
 /* schedule */
@@ -133,7 +133,7 @@ tr:last-child td{border-bottom:0}
       <div class="ctl"><span class="ctl-lbl">Escenas</span>
         <span class="seg" id="scenes"><button data-sc="dia" aria-pressed="true">Día</button><button data-sc="trabajo" aria-pressed="false">Trabajo</button><button data-sc="cine" aria-pressed="false">Cine / juego</button><button data-sc="estar" aria-pressed="false">Estar</button><button data-sc="noche" aria-pressed="false">Noche</button><button data-sc="todo" aria-pressed="false">Todo</button></span></div>
       <div class="ctl"><span class="ctl-lbl">Luces</span>
-        <span class="seg"><button id="nightToggle" aria-pressed="false">Modo noche</button><button id="rSofa" aria-pressed="false">Riel sofá</button><button id="rPared" aria-pressed="false">Riel pared TV</button><button id="rEsc" aria-pressed="false">Spots escritorio</button><button id="ledTvToggle" aria-pressed="false">LED TV</button><button id="ledMdToggle" aria-pressed="false">LED mueble y consolas</button><button id="lampToggle" aria-pressed="true">Lámpara</button></span></div>
+        <span class="seg"><button id="nightToggle" aria-pressed="false">Modo noche</button><button id="rSofa" aria-pressed="false">Riel en C</button><button id="rPared" aria-pressed="false">Lámpara colgante</button><button id="rEsc" aria-pressed="false">Barra monitor</button><button id="ledTvToggle" aria-pressed="false">LED TV</button><button id="ledMdToggle" aria-pressed="false">LED mueble y consolas</button><button id="lampToggle" aria-pressed="true">Lámpara</button></span></div>
       <div class="ctl"><span class="ctl-lbl">Muebles</span>
         <span class="seg"><button id="tbToggle" aria-pressed="false">Sacar mesa</button><button id="bedToggle" aria-pressed="false">Abrir sofá cama</button></span></div>
       <div class="ctl"><span class="ctl-lbl">Ver</span>
@@ -174,7 +174,7 @@ tr:last-child td{border-bottom:0}
           <tr><td>Mesa de centro (patas abatibles)</td><td class="m">0.76 × 0.50 · h 0.44 abierta<br>~0.09 plegada</td><td>De melamina, con 4 patas de 37.5 cm en bisagras para pata plegable y un marco de 6 cm donde se guardan las patas. Plegada se guarda en el módulo derecho, bajo los libros (hueco 0.864 × 0.582 · h 0.207, sobre zócalo y base como el resto), detrás de una puerta abatible embutida que se abre hacia abajo y queda horizontal gracias a 2 compases/topes; la mesa se desliza sobre ella. Al sacarla, se despliegan las patas y queda a la altura del asiento del sofá. Fieltros en las patas para no rayar el piso. Con el sofá cama abierto, va al costado de la cama, a la altura de la cabecera, como mesa de noche</td></tr>
           <tr><td>Soundbar</td><td class="m">~0.90 × 0.10 · h 0.065</td><td>Encima del mueble, centrada bajo la TV (quedan ~14 cm hasta la pantalla). Pasacables en la tapa detrás de ella, que cae a la columna de la Xbox: corriente a la toma doble y HDMI eARC hacia la TV por el pasacables del fondo y el tubo del armazón</td></tr>
           
-          <tr><td>Iluminación de techo (rieles)</td><td class="m">2 rieles negros de superficie<br>sofá ~2.05 m · principal ~1.15 + 2.75 m<br>8 spots LED 3000 K</td><td>Los 8 dicroicos se retiran y sus cajas llevan tapa ciega. <b>Riel sofá</b> sobre la línea S1–S4, alimentado en S2 (interruptor "línea sofá"): 2 spots de lectura + 1 a la repisa. <b>Riel principal</b> desde C3 hasta la pared de la TV y paralelo a ~65 cm de los listones (interruptor "cuadrado"): 3 spots a la pared/mueble (24–36°) + 2 al escritorio con foco inteligente GU10 para prenderlos aparte. Todo con dimmer o compatible con HomeKit</td></tr>
+          <tr><td>Iluminación de techo</td><td class="m">riel en C ~2.05 + 2.70 + 1.60 m · 7 spots<br>lámpara colgante Ø40 · barra de monitor</td><td>Los 8 dicroicos se retiran y sus cajas llevan tapa ciega. <b>Riel en C</b> (interruptor "línea sofá", alimentado en S2): sobre el sofá (2 de lectura + 1 a la repisa), a lo largo de la ventana (1) y bajando por la pared de la TV hasta el mueble (3 a listones y mueble). <b>Lámpara colgante</b> (interruptor "cuadrado", en C3, la caja más central): cúpula de ~40 cm, borde inferior a ~1.90 m, para el medio del cuarto. <b>Escritorio</b>: barra de luz sobre el monitor (USB, botón propio). Spots LED 7 W, 3000 K</td></tr>
           <tr><td>HomePod mini</td><td class="m">Ø 0.10 · h 0.085</td><td>Encima del mueble, a la derecha de la soundbar. Su cable baja por un pasacables en la tapa, detrás de él, a una de las 2 tomas dobles del fondo de los libros</td></tr>
           <tr><td>Xbox Series X</td><td class="m">0.15 × 0.15 · h 0.31 (parada)<br>columna 0.25 × 0.582 · h 0.484</td><td>Parada, en la columna central de alto completo, bajo la TV; quedan 16 cm arriba para que salga el aire. En el fondo gris: toma doble abajo (Xbox + soundbar) y pasacables arriba que conecta con el tubo del armazón del panel, por donde suben los HDMI a la TV</td></tr>
           <tr><td>Impresora</td><td class="m">HP Smart Tank ~0.44 × 0.36 × 0.16<br>encima del mueble, a 58 cm</td><td>Encima del mueble, a la izquierda de la TV (esquina de la ventana): se usa a buena altura, sin sacarla, para cargar papel y escanear. Su cable baja por un pasacables en la tapa, detrás de ella, directo al espacio abierto de abajo, a una de las 3 tomas dobles del fondo</td></tr>
@@ -195,7 +195,7 @@ tr:last-child td{border-bottom:0}
         <li>La silla queda fuera de la línea de vista sofá → TV, y la ventana queda a tu izquierda al trabajar: luz lateral, sin reflejos en el monitor.</li>
         <li>Entre el sofá y la pared de la puerta quedan <b>~1.0 m</b> libres; la puerta abre completa contra la pared izquierda.</li>
         <li>La mesa plegable se guarda bajo los libros; con el sofá cama abierto, va al costado como mesa de noche.</li>
-        <li>Techo: sin dicroicos. Dos rieles con spots, cada uno en uno de los dos interruptores existentes (conmutados en la puerta y en la pared de la TV). Escenas: <b>Trabajo</b> (spots escritorio + LED mueble), <b>Cine</b> (LED TV + consolas + lámpara), <b>Estar</b> (riel sofá + pared + lámpara), <b>Noche</b> (solo LED tenue).</li>
+        <li>Techo: sin dicroicos. <b>Riel en C</b> con el interruptor de la línea del sofá y <b>lámpara colgante</b> en C3 con el del cuadrado (ambos conmutados en la puerta y en la pared de la TV). El escritorio usa una <b>barra sobre el monitor</b> con su propio botón. Escenas: <b>Trabajo</b> (barra + LED mueble), <b>Cine</b> (LED TV y consolas + lámpara), <b>Estar</b> (riel en C + lámpara), <b>Noche</b> (solo LED tenue), <b>Todo</b>.</li>
         <li>El interruptor conmutado de la pared de la TV queda sobre el panel (con suplemento de caja); conviene moverlo hacia la esquina para que el monitor no lo tape. La caja fuerte empotrada queda cubierta por el panel.</li>
         <li>El cuarto no es un rectángulo perfecto: con las 4 medidas, la pared izquierda queda ~1° inclinada. El plano respeta esa diferencia.</li>
       </ul>
@@ -317,9 +317,12 @@ txt(R.winL+winW/2,-t-0.08,'','p-lbl s');
 txt(SW[0]+0.42,SW[1]-0.5,'entrada','p-lbl s');
 
 (function(){const g=el('g',{class:'p-rail'});
-  el('path',{d:`M${X(0.42)} ${Y(0.45)} L${X(0.42)} ${Y(2.50)} M${X(1.95)} ${Y(1.34)} L${X(3.12)} ${Y(1.34)} M${X(3.12)} ${Y(0.25)} L${X(3.12)} ${Y(3.0)}`},g);
-  [[0.42,0.80],[0.42,1.35],[0.42,1.90],[3.12,0.40],[3.12,1.15],[3.12,2.03],[3.12,2.45],[3.12,2.85]].forEach(([x,z])=>el('circle',{cx:X(x),cy:Y(z),r:5},g));
-  const a=el('text',{x:X(0.50),y:Y(0.30),class:'p-ltxt'},g);a.textContent='riel sofá';const b=el('text',{x:X(2.55),y:Y(1.34)-10,class:'p-ltxt','text-anchor':'middle'},g);b.textContent='riel principal';const c=el('text',{x:X(2.55),y:Y(3.22),class:'p-ltxt','text-anchor':'middle'},g);c.textContent='● alimenta (S2, C3) · ○ tapa ciega · ● spot';})();
+  el('path',{d:`M${X(0.42)} ${Y(2.50)} L${X(0.42)} ${Y(0.45)} L${X(3.12)} ${Y(0.45)} L${X(3.12)} ${Y(2.05)}`},g);
+  [[0.42,0.95],[0.42,1.40],[0.42,1.85],[1.75,0.45],[3.12,0.62],[3.12,1.25],[3.12,1.95]].forEach(([x,z])=>el('circle',{cx:X(x),cy:Y(z),r:5},g));
+  el('circle',{cx:X(1.95),cy:Y(1.34),r:0.2*k,class:'p-plafon'},g);
+  const a=el('text',{x:X(1.75),y:+Y(0.45)+16,class:'p-ltxt','text-anchor':'middle'},g);a.textContent='riel en C · interruptor línea sofá (S2)';
+  const b=el('text',{x:X(1.95),y:+Y(1.34)+0.2*k+14,class:'p-ltxt','text-anchor':'middle'},g);b.textContent='colgante · interruptor cuadrado (C3)';
+  const c=el('text',{x:X(2.55),y:Y(3.22),class:'p-ltxt','text-anchor':'middle'},g);c.textContent='● alimenta · ○ tapa ciega · ● spot';})();
 svg.querySelectorAll('.p-light').forEach(g=>svg.appendChild(g));
 
 /* ---------- alzado y cortes ---------- */
@@ -766,27 +769,40 @@ const DAY={ceil:[]};
 (function(){DAY.dm=null;const tm=M('#F2EFEA',{roughness:.9}),fm=M('#1A1B1D',{roughness:.5,metalness:.4});
   LUCES.forEach(l=>{const feed=l.id==='S2'||l.id==='C3';const t=new THREE.Mesh(new THREE.CylinderGeometry(0.06,0.06,0.006,28),feed?fm:tm);t.position.set(l.x,R.H-0.003,l.y);room.add(t);});
   [[0.7,0.8],[2.2,0.6],[0.95,2.1]].forEach(([x,z])=>{const pl=new THREE.PointLight('#FFF0DA',0.2,5,2);pl.position.set(x,R.H-0.12,z);room.add(pl);DAY.ceil.push(pl);});})();
-// rieles negros de superficie con spots orientables (3000 K)
-// circuito "línea sofá" (interruptor de la puerta) -> riel sofá, alimentado en S2
-// circuito "cuadrado"   (interruptor de la puerta) -> riel principal, alimentado en C3; spots del escritorio con foco inteligente para separarlos
-const RAILS={sofa:[],pared:[],escritorio:[]};
+// riel en C (circuito "línea sofá", alimentado en S2): sobre el sofá, a lo largo de la ventana y bajando por la pared de la TV hasta el mueble
+// luz central (circuito "cuadrado", en C3): plafón de superficie para luz general
+// escritorio: barra de luz sobre el monitor, con su propio botón
+const RAILS={c:[],centro:[],barra:[]};
 (function(){const rm=M('#1A1B1D',{roughness:.5,metalness:.4}),y=R.H-0.018;
-  function seg(x0,z0,x1,z1){const L=Math.hypot(x1-x0,z1-z0);const m=new THREE.Mesh(new THREE.BoxGeometry(Math.abs(x1-x0)>0.01?L:0.035,0.032,Math.abs(z1-z0)>0.01?L:0.035),rm);m.position.set((x0+x1)/2,y,(z0+z1)/2);room.add(m);}
+  function seg(x0,z0,x1,z1){const L=Math.hypot(x1-x0,z1-z0);const m=new THREE.Mesh(new THREE.BoxGeometry(Math.abs(x1-x0)>0.01?L+0.035:0.035,0.032,Math.abs(z1-z0)>0.01?L+0.035:0.035),rm);m.position.set((x0+x1)/2,y,(z0+z1)/2);room.add(m);}
   function spot(grp,x,z,tg,I,ang){const g=new THREE.Group();g.position.set(x,y-0.016,z);room.add(g);
     const dir=new THREE.Vector3(tg[0]-x,tg[1]-(y-0.1),tg[2]-z).normalize();
     const body=new THREE.Mesh(new THREE.CylinderGeometry(0.03,0.03,0.1,20),rm);body.quaternion.copy(new THREE.Quaternion().setFromUnitVectors(new THREE.Vector3(0,-1,0),dir));body.position.copy(dir.clone().multiplyScalar(0.06));g.add(body);
     const lens=new THREE.Mesh(new THREE.CircleGeometry(0.024,20),new THREE.MeshBasicMaterial({color:'#FFE9C8',transparent:true,opacity:0,side:THREE.DoubleSide}));lens.quaternion.copy(new THREE.Quaternion().setFromUnitVectors(new THREE.Vector3(0,0,1),dir));lens.position.copy(dir.clone().multiplyScalar(0.111));g.add(lens);
     const sp=new THREE.SpotLight('#FFDDB0',0,6,ang,0.55,1.2);sp.position.set(x+dir.x*0.12,y-0.016+dir.y*0.12,z+dir.z*0.12);sp.target.position.set(...tg);room.add(sp,sp.target);
     RAILS[grp].push({sp,lens,I});}
-  // riel sofá: sobre la línea de cajas S1–S4 (x 0.42), alimentado en S2
-  seg(0.42,0.45,0.42,2.50);
-  spot('sofa',0.42,0.80,[0.65,0.48,0.85],1.6,0.42);spot('sofa',0.42,1.90,[0.65,0.48,1.85],1.6,0.42);spot('sofa',0.42,1.35,[0.02,1.55,1.35],1.3,0.32);
-  // riel principal: tramo desde C3 hasta la pared de la TV y tramo paralelo a ~65 cm de los listones
-  seg(1.95,1.34,3.12,1.34);seg(3.12,0.25,3.12,3.0);
-  spot('pared',3.12,0.40,[3.77,1.05,0.40],2.2,0.30);spot('pared',3.12,2.03,[3.77,1.15,2.03],2.2,0.30);spot('pared',3.12,1.15,[3.35,0.32,1.15],1.6,0.36);
-  spot('escritorio',3.12,2.45,[3.32,0.75,2.45],2.6,0.30);spot('escritorio',3.12,2.85,[3.32,0.75,2.85],2.6,0.30);
+  // riel en C
+  seg(0.42,2.50,0.42,0.45);seg(0.42,0.45,3.12,0.45);seg(3.12,0.45,3.12,2.05);
+  spot('c',0.42,0.95,[0.65,0.48,0.95],1.6,0.42);spot('c',0.42,1.85,[0.65,0.48,1.85],1.6,0.42);spot('c',0.42,1.40,[0.02,1.55,1.40],1.2,0.32);
+  spot('c',1.75,0.45,[1.75,1.3,-0.02],1.0,0.40);
+  spot('c',3.12,0.62,[3.77,1.05,0.55],2.0,0.30);spot('c',3.12,1.25,[3.35,0.32,1.25],1.5,0.36);spot('c',3.12,1.95,[3.77,1.15,2.0],2.0,0.30);
+  // luz central: lámpara colgante en C3 (cúpula Ø40, borde inferior a ~1.90 m)
+  const cx=1.95,cz=1.34,hb=1.90;const blk=M('#1A1B1D',{roughness:.5,metalness:.3});
+  const rose=new THREE.Mesh(new THREE.CylinderGeometry(0.06,0.06,0.025,24),blk);rose.position.set(cx,R.H-0.0125,cz);room.add(rose);
+  const cord=new THREE.Mesh(new THREE.CylinderGeometry(0.003,0.003,R.H-hb-0.2,6),blk);cord.position.set(cx,(R.H+hb+0.2)/2,cz);room.add(cord);
+  const shade=new THREE.Mesh(new THREE.CylinderGeometry(0.04,0.2,0.2,40,1,true),new THREE.MeshStandardMaterial({color:'#1F2022',roughness:.45,metalness:.3,side:THREE.DoubleSide}));shade.position.set(cx,hb+0.1,cz);shade.castShadow=true;room.add(shade);
+  const inner=new THREE.Mesh(new THREE.CylinderGeometry(0.038,0.198,0.198,40,1,true),new THREE.MeshStandardMaterial({color:'#E9DCC4',roughness:.8,side:THREE.BackSide,emissive:'#FFE0B0',emissiveIntensity:0}));inner.position.copy(shade.position);room.add(inner);
+  const df=new THREE.Mesh(new THREE.SphereGeometry(0.04,16,12),new THREE.MeshBasicMaterial({color:'#FFF1DE',transparent:true,opacity:0}));df.position.set(cx,hb+0.06,cz);room.add(df);
+  const cs=new THREE.SpotLight('#FFE6C4',0,7,Math.PI/3.2,0.7,1.0);cs.position.set(cx,hb+0.05,cz);cs.target.position.set(cx,0,cz);cs.castShadow=false;room.add(cs,cs.target);
+  const cp=new THREE.PointLight('#FFE6C4',0,5,1.6);cp.position.set(cx,hb+0.12,cz);room.add(cp);
+  RAILS.centro.push({sp:cs,lens:df,I:2.4},{sp:cp,lens:{material:{}},I:0.35},{sp:{set intensity(v){inner.material.emissiveIntensity=v?0.8:0;}},lens:{material:{}},I:1});
 })();
-function setRail(g,on){RAILS[g].forEach(o=>{o.sp.intensity=on?o.I:0;o.lens.material.opacity=on?1:0;});}
+// barra de luz sobre el monitor (ScreenBar)
+(function(){const cx=0.50,yb=0.87+0.37+0.012;const bar=new THREE.Mesh(new THREE.BoxGeometry(0.45,0.02,0.035),M('#2A2B2D',{roughness:.4,metalness:.5}));bar.position.set(cx,yb,0.215);deskG.add(bar);
+  const ld=new THREE.Mesh(new THREE.PlaneGeometry(0.42,0.012),new THREE.MeshBasicMaterial({color:'#FFF2DE',transparent:true,opacity:0,side:THREE.DoubleSide}));ld.rotation.x=Math.PI/2;ld.position.set(cx,yb-0.011,0.225);deskG.add(ld);
+  const sp=new THREE.SpotLight('#FFE9CC',0,1.6,0.75,0.6,1.4);sp.position.set(cx,yb-0.02,0.24);const tg=new THREE.Object3D();tg.position.set(cx,0.75,0.45);deskG.add(sp,tg);sp.target=tg;
+  RAILS.barra.push({sp,lens:ld,I:1.6});})();
+function setRail(g,on){RAILS[g].forEach(o=>{o.sp.intensity=on?o.I:0;if(o.lens.material)o.lens.material.opacity=on?1:0;});}
 
 // luces: sol del norte (Lima) entrando por la ventana
 const hemi=new THREE.HemisphereLight('#FFF6EA','#B79C7E',0.55),amb=new THREE.AmbientLight('#ffffff',0.12);scene.add(hemi,amb);
@@ -868,15 +884,15 @@ const tbB=document.getElementById('tbToggle');tbB.addEventListener('click',()=>{
 const dvB=document.getElementById('devToggle');dvB.addEventListener('click',()=>{const off=dvB.getAttribute('aria-pressed')!=='true';dvB.setAttribute('aria-pressed',off);dvB.textContent=off?'Mostrar aparatos':'Quitar aparatos';DEV.forEach(o=>o.visible=!off);printerG.visible=!off;});
 window.__dev=()=>dvB.click();const cbB=document.getElementById('cableToggle');cbB.addEventListener('click',()=>{const on=cbB.getAttribute('aria-pressed')!=='true';cbB.setAttribute('aria-pressed',on);cableMat.color.set(on?'#ff7a1a':'#18191b');cableMat.emissive.set(on?'#ff5a00':'#000000');cableMat.emissiveIntensity=on?0.8:0;});
 window.__cab=()=>cbB.click();
-const RB={sofa:document.getElementById('rSofa'),pared:document.getElementById('rPared'),escritorio:document.getElementById('rEsc')};
+const RB={c:document.getElementById('rSofa'),centro:document.getElementById('rPared'),barra:document.getElementById('rEsc')};
 function railSet(g,on){RB[g].setAttribute('aria-pressed',on);setRail(g,on);}
 Object.keys(RB).forEach(g=>RB[g].addEventListener('click',()=>{railSet(g,RB[g].getAttribute('aria-pressed')!=='true');markScene(null);}));
 const nB=document.getElementById('nightToggle');
 function nightSet(on){if(night!==on){nB.setAttribute('aria-pressed',on);nB.textContent=on?'Volver al día':'Modo noche';setNight(on);}}
-const SC={dia:{n:0,sofa:0,pared:0,escritorio:0,tv:0,md:0,lamp:0},trabajo:{n:1,sofa:0,pared:0,escritorio:1,tv:0,md:1,lamp:0},cine:{n:1,sofa:0,pared:0,escritorio:0,tv:1,md:1,lamp:1},
-  estar:{n:1,sofa:1,pared:1,escritorio:0,tv:0,md:1,lamp:1},noche:{n:1,sofa:0,pared:0,escritorio:0,tv:0,md:1,lamp:0},todo:{n:1,sofa:1,pared:1,escritorio:1,tv:1,md:1,lamp:1}};
+const SC={dia:{n:0,c:0,centro:0,barra:0,tv:0,md:0,lamp:0},trabajo:{n:1,c:0,centro:0,barra:1,tv:0,md:1,lamp:0},cine:{n:1,c:0,centro:0,barra:0,tv:1,md:1,lamp:1},
+  estar:{n:1,c:1,centro:0,barra:0,tv:0,md:1,lamp:1},noche:{n:1,c:0,centro:0,barra:0,tv:0,md:1,lamp:0},todo:{n:1,c:1,centro:1,barra:1,tv:1,md:1,lamp:1}};
 function markScene(k){document.querySelectorAll('#scenes button').forEach(b=>b.setAttribute('aria-pressed',b.dataset.sc===k));}
-function applyScene(k){const c=SC[k];nightSet(!!c.n);['sofa','pared','escritorio'].forEach(g=>railSet(g,!!c[g]));setLed(ledTV,!!c.tv,bLTV);setLed(ledMD,!!c.md,bLMD);setLamp(!!c.lamp);markScene(k);}
+function applyScene(k){const c=SC[k];nightSet(!!c.n);['c','centro','barra'].forEach(g=>railSet(g,!!c[g]));setLed(ledTV,!!c.tv,bLTV);setLed(ledMD,!!c.md,bLMD);setLamp(!!c.lamp);markScene(k);}
 document.getElementById('scenes').addEventListener('click',e=>{const b=e.target.closest('button');if(b)applyScene(b.dataset.sc);});
 window.__scene=applyScene;
 window.__go=go;window.__tb=()=>tbB.click();window.__bed=()=>bt.click();
